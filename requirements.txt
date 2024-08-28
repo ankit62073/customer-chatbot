@@ -7,4 +7,11 @@ flask
 pypdf
 python-dotenv
 unstructured
+gunicorn
+
+huggingface_hub
+transformers
+accelerate
+bitsandbytes
+
 -e .

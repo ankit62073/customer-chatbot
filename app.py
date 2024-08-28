@@ -39,6 +39,7 @@ llm=CTransformers(model="model/llama-2-7b-chat.ggmlv3.q4_0.bin",
                           'temperature':0.8})
 
 
+
 qa = RetrievalQA.from_chain_type(
     llm=llm,
     retriever=docsearch.as_retriever(search_kwargs={'k': 2}),
